@@ -2,8 +2,8 @@ services:
     wolfsblvt.avatarsonmemberlist.listener:
         class: wolfsblvt\avatarsonmemberlist\event\listener
         arguments:
-            - @path_helper
-            - @template
-            - @user
+            - "@path_helper"
+            - "@template"
+            - "@user"
         tags:
             - { name: event.listener }
